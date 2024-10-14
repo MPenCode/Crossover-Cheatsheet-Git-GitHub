@@ -1,3 +1,6 @@
+import GitCommands from '../components/GitCommands'
+import GitExplain from '../components/GitExplain'
+
 const CheatSheet = () => {
   // Der Einfachheit halber kommt manches erst einmal hierhin, was dann in Komponenten ausgelagert werden kann.
   return (
@@ -15,8 +18,8 @@ const CheatSheet = () => {
   </p>
   
   <section id="MPenCode">
-  
-  
+  <GitExplain />
+  <GitCommands />
   </section>
   
   <section id="ionaci">
