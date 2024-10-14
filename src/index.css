@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+main {
+
+    margin: 2rem;
+
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+
+#testbereich {
+    border-top: 5px solid #555;
+    border-bottom: 5px solid #555;
+}
