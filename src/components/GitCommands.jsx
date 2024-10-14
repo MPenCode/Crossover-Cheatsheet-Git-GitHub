@@ -1,8 +1,8 @@
 const GitCommands = () => {
   return (
     <div>
-      <h3>Hier die Git Codes In einem Codeblock</h3>
-      <pre>
+      <h3 className="text-2xl font-medium mb-2">Hier die Git Codes In einem Codeblock</h3>
+      <pre className="block bg-gray-100 p-2 rounded-md mb-2">
         <code>
           git config --global init.defaultBranch main //setzt den
           Standard-Branch auf main
