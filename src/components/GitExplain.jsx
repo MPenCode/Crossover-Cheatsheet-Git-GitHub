@@ -33,20 +33,20 @@ return (
             Um ein neues Git-Repository zu erstellen, navigiere in deinem Terminal
             in das Projektverzeichnis
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: cd /pfad/zu/deinem/projekt</code>
+        <pre className="mockup-code"><code>--Terminal: cd /pfad/zu/deinem/projekt</code></pre>
         <p> und führe den folgenden Befehl aus:</p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git init</code>
+        <pre className="mockup-code"><code>--Terminal: git init</code></pre>
         <p>
             Sollte der Haupt Branch nicht Main sondern Master sein kannst du dies
             hier für immer ändern:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git config --global init.defaultBranch main</code>
+        <pre className="mockup-code"><code>--Terminal: git config --global init.defaultBranch main</code></pre>
         <h4 className="text-xl font-medium mb-2">Clonen</h4>
         <p>
             Sollte es allerdings schon ein Repository geben kannst du dieses Klonen
             mit folgendem Befehl:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git clone [URL] </code>
+        <pre className="mockup-code"><code>--Terminal: git clone [URL] </code></pre>
         <p>
             Sei dir sicher, dass du in dem richtigen Ordner bist, in dem du das
             Repository haben möchtest. Der Befehl erstellt einen neuen Ordner mit
@@ -58,16 +58,16 @@ return (
             Um den Status deines Repositories zu überprüfen, führe den folgenden
             Befehl aus:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git status</code>
+        <pre className="mockup-code"><code>--Terminal: git status</code></pre>
         <p>
             Der Befehl zeigt dir, welche Dateien geändert wurden und welche Dateien
             noch nicht getrackt werden.
         </p>
         <h4 className="text-xl font-medium mb-2">Git Add</h4>
         <p>Um alle Änderungen auszuwählen, führe den folgenden Befehl aus:</p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git add . //alle Dateien</code>
+        <pre className="mockup-code"><code>--Terminal: git add . //alle Dateien</code></pre>
         <br />
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git add [Datei] //bestimmte Dateien</code>
+        <pre className="mockup-code"><code>--Terminal: git add [Datei] //bestimmte Dateien</code></pre>
         <p>
             Wenn du nur bestimmte Dateien auswählen möchtest, füge die Dateinamen
             hinzu:
@@ -77,15 +77,15 @@ return (
             Um die ausgewählten Dateien dem Branch hinzuzufügen kannst du diesen
             Befehl verwenden:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git commit -m "Commit Nachricht" //Fügt die ausgewählten
             Dateien dem Branch hinzu
-        </code>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        </code></pre>
+        <pre className="mockup-code"><code>
             <br />
             --Terminal: git commit -am "Commit Nachricht" //wählt alle Dateien aus
             und fügt sie dem Branch hinzu
-        </code>
+        </code></pre>
         <p>
             In die Commit Nachricht sollte hinein was sich verändert hat seit der
             letzten Commit Nachricht.
@@ -102,13 +102,13 @@ return (
             Hauptcode zu beeinträchtigen. Um einen neuen Branch zu erstellen, führe
             den folgenden Befehl aus:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git checkout -b [neuer Branch] //erstellt einen neuen Branch
-        </code>
+        </code></pre>
         <br />
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git branch [neuer Branch] //erstellt einen neuen Branch{" "}
-        </code>
+        </code></pre>
         <p>
             Good Practice: Erstelle deinen Branch immer mit einem Namen mit
             Bedeutung die für einen Fremden Sinn macht. Du wirst häufig mit anderen
@@ -120,24 +120,24 @@ return (
             {" "}
             Um zu einem anderen Branch zu wechseln, führe den folgenden Befehl aus:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git checkout [Branch] //wechselt zu einem anderen Branch
-        </code>
+        </code></pre>
         <br />
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git checkout - //wechselt zum vorherigen Branch </code>
+        <pre className="mockup-code"><code>--Terminal: git checkout - //wechselt zum vorherigen Branch </code></pre>
         <p>
             Um alle Branches anzuzeigen oder einen Branch zu löschen, führe die
             folgenden Befehle aus:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git branch //zeigt alle Branches an </code>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git branch -d [Branch] //löscht einen Branch</code>
+        <pre className="mockup-code"><code>--Terminal: git branch //zeigt alle Branches an </code></pre>
+        <pre className="mockup-code"><code>--Terminal: git branch -d [Branch] //löscht einen Branch</code></pre>
         <br />
         <h4 className="text-xl font-medium mb-2">Merge</h4>
         <p>Um zwei Branches zusammenzuführen, führe den folgenden Befehl aus:</p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git merge [anderer Branch] //fügt die Änderungen des anderen
             Branches in den aktuellen Branch ein
-        </code>
+        </code></pre>
         <p>
             Good Practice: Merge nie direkt einen branch in "main" sondern immer in
             einen stellvertreter z.b. ein Entwicklungs Branch "dev". In main soll
@@ -148,30 +148,30 @@ return (
             Um mit einem Remote-Repository zu arbeiten, führe die folgenden Befehle
             aus:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git remote -v //zeigt alle Remote-Repositories an</code>
+        <pre className="mockup-code"><code>--Terminal: git remote -v //zeigt alle Remote-Repositories an</code></pre>
         <br />
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git remote add origin [URL] //verknüpft das lokale
             Repository mit dem Remote-Repository
-        </code>
+        </code></pre>
         <p>
             Um Änderungen in das Remote-Repository zu übertragen, führe den
             folgenden Befehl aus:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git push --set-upstream origin [Branch] //schiebt den
             lokalen Branch in das Remote-Repository und erstellt ein upstream
-        </code>
+        </code></pre>
         <br />
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git push //schiebt alle Branches in das Remote-Repository
             welche einen upstream haben
-        </code>
+        </code></pre>
         <br />
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git push origin [Branch] //schiebt den lokalen Branch in das
             Remote-Repository
-        </code>
+        </code></pre>
         <p>
             Good Practice: Nach erstellen und Hochladen der allgemeinen Branches
             "main" und "dev" soll nicht wieder direkt auf diese Branches Daten
@@ -182,35 +182,35 @@ return (
             Um Änderungen aus dem Remote-Repository zu übernehmen, führe die
             folgenden Befehle aus:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git pull //holt alle Änderungen aus dem Remote-Repository
-        </code>
+        </code></pre>
         <br />
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git pull origin [Branch] //holt alle Änderungen aus dem
             Remote-Repository für einen bestimmten Branch
-        </code>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        </code></pre>
+        <pre className="mockup-code"><code>
             --Terminal: git fetch origin //holt alle Änderungen aus dem
             Remote-Repository, zeigt sie aber nur an
-        </code>
+        </code></pre>
         <h4 className="text-xl font-medium mb-2">Log</h4>
         <p>Um die Commit-Historie anzuzeigen, führe den folgenden Befehl aus:</p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">--Terminal: git log //zeigt die Commit-Historie an</code>
+        <pre className="mockup-code"><code>--Terminal: git log //zeigt die Commit-Historie an</code></pre>
         <br />
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git log --oneline //zeigt die Commit-Historie in einer Zeile
             an
-        </code>
+        </code></pre>
         <h4 className="text-xl font-medium mb-2">Restore</h4>
         <p>
             Um eine Datei auf den Stand des letzten Commits zurückzusetzen, führe
             den folgenden Befehl aus:
         </p>
-        <code className="block bg-gray-100 p-2 rounded-md mb-2">
+        <pre className="mockup-code"><code>
             --Terminal: git restore [Datei] //setzt die Datei auf den Stand des
             letzten Commits zurück
-        </code>
+        </code></pre>
     </div>
 );
 };
