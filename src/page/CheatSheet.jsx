@@ -9,11 +9,13 @@ const CheatSheet = () => {
       <h1>Cheatsheet: Git und Github</h1>
         <section id="MPenCode">
     <GitExplain />
-  <GitCommands />
     </section>
         <section id="ionaci"></section>
         <Repo />
         <section id="Lernya"></section>
+        <br />
+        <br />
+    <GitCommands />
     </main>
   );
 };

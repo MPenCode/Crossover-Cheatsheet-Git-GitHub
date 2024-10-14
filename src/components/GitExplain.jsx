@@ -1,7 +1,7 @@
 const gitExplain = () => {
 return (
     <div>
-        <h1 className="text-4xl font-bold mb-4">CheatSheet Git und GitHub</h1>
+        <br />
         <h2 className="text-3xl font-semibold mb-3">Was ist was?</h2>
         <h3 className="text-2xl font-medium mb-2">Git</h3>
         <p>

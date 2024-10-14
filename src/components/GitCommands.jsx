@@ -14,8 +14,6 @@ const GitCommands = () => {
         <br />
         <code>git status //zeigt den Status des Repositories an</code>
         <br />
-        <code>git status //zeigt den Status des Repositories an</code>
-        <br />
         <code>git add . //fügt alle Änderungen zur Staging-Area hinzu</code>
         <br />
         <code>
